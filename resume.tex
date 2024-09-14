@@ -1,0 +1,208 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+
+
+\documentclass[]{resume-template}
+\usepackage{multicol}
+\usepackage{tabularx}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Old style with WWW link
+%\namesection{Joseph}{Sheldon}{ \urlstyle{same}\url{http://www.centigradi.us} \\
+%\href{mailto:kb3vwt@gmail.com}{kb3vwt@gmail.com} | 717.965.9591}
+
+\namesectionnoweb{Joseph M. Sheldon Jr.}{} \\
+\href{mailto:kb3vwt@gmail.com}{kb3vwt@gmail.com} | 860-849-9311}\\
+%4041 E Birchbrook Ct, Tucson, AZ 85712
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%Github:// \href{https://github.com/kb3vwt}{\custombold{kb3vwt}} \\
+%LinkedIn://  \href{www.linkedin.com/in/joey-sheldon}{\custombold{joey-sheldon}} \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Statement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Career Objective}
+%\begin{flushleft}
+%\noindent I am seeking employment as a Senior Software Engineer where I can apply my existing technical and software experience to continue providing innovative software based solutions, especially in the realm of web technologies and document processing
+%\end{flushleft}
+%\vspace{-2ex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+\vspace{1ex} %hacky fix to bring back to 1 pg
+\runsubsection{Blueink LLC}
+\descript{| Senior Software Engineer \& Innovation Team Lead (Full Stack)}
+\location{March 2022 -- August 2024 | eSignature SaaS Platform}
+\begin{tightemize}
+\item Primary developer responsible for subscription / entitlement management vis a vis Stripe
+\item Architected core functionality for an internal `Support Portal' for Customer Support / Sales team
+\item Enhanced observability around account usage, including live dashboards
+\item Designed, developed, and released public Python module for Blueink API on PyPI
+\item Explored use of voice recognition, text-to-speech, and ML models to have interactive discussions about documents 
+\item Advised two teams of University at Buffalo MIS students on their capstone project
+\item Migrated applications from Heroku to AWS; automated CI/CD processes with GitHub workflows and Porter.run
+\item General day-to-day work included planning and adding new customer-facing features, fixing bugs, and reviewing PRs. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{General Dynamics Electric Boat}
+\descript{| Senior Software Engineer}
+\location{July 2018 -- March 2022 | ATG - Advanced Technology Group}
+\begin{tightemize}
+\item Lead developer of the Build Plan Editor,  a 3D model based authoring tool for paperless/AR work instruction
+\item Participated in the design and implementation of the backend system that delivers fast access to CAD models
+\item Developed batch process to retesselate and convert legacy 3D format to modern in house format
+\item Live PMI pilot -- serverside dimensioning of CAD model features for use within several apps
+\item Machine Learning pilots -- optimizing purchase order sequences and determining optimal weld classification
+%\item Evaluated RF based AR tracking hardware
+\end{tightemize}
+\sectionsep
+
+\runsubsection{University of Connecticut}
+\descript{| Graduate Assistant}
+\location{August 2016 -- May 2018 | Physics Department}
+\begin{tightemize}
+\item Built a data acquisition card into a `NIM' rack module,  wrote custom firmware to buffer measurements.
+\item Wrote a Python wrapper and designed a GUI using PyQT5 to control the data acquisition card over serial. 
+\item Wrote custom Python API to control LakeShore Model 372 AC/Resistance bridge.
+\item Investigated using active noise cancellation circuitry to counter vibrations for a scanning SQUID microscope.
+%\item Taught several semesters of introductory astronomy lab and ran night time telescope observation sessions.
+\item Redesigned experiments in the astronomy lab manual and maintained a linux server for the course.
+%\item Maintained a Linux server for the Astronomy lab. 
+\end{tightemize}
+\sectionsep
+\vspace{-1ex} %hacky fix to bring back to 1 pg
+\runsubsection{Pennsylvania State University }
+\descript{| Undergrad Research Assistant }
+\location{Nov 2014 -- Aug 2016 | Astronomy Department}
+\begin{tightemize}
+%\item  Simulated exoplanet transit light curves with varying transit time variation using Python.
+\item Simulated exoplanet transit light curves for modeling data from the Kepler space telescope.
+\item Parallelized a Fortran algorithm (using CUDA C) for integrating planet trajectories around binary star systems.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Purdue University}
+\descript{| REU Research Assistant}
+\location{Summer 2015 | Department of Physics and Astronomy}
+\begin{tightemize}
+\item Analyzed `BiPo' event data from the XENON10T dark matter detector using ROOT.
+\item Ran Monte Carlo simulations of radioisotopes decaying inside the detector using GEANT4.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Tabular version:
+%\section{Education} 
+%\begin{tabularx}{\textwidth}{ l l X}
+%2012 -- 2016 & BSc Physics, BSc. Astronoy \& Astrophysics & Pennsylvania State University \\
+%2016 -- 2018 & No Degree & University of Connecticut
+%\end{tabularx}
+%\sectionsep
+
+%2 Column Formatted:
+\section{Education} 
+\begin{multicols}{2}
+\runsubsection{Pennsylvania State University}\\
+\descript{BS Physics}
+\descript{BS Astronomy \& Astrophysics}
+\location{Aug 2012 -- May 2016 | State College, PA}
+\sectionsep
+\columnbreak
+\runsubsection{University of Connecticut}\\
+\descript{No Degree}
+\descript{(Toward PhD in Physics)}
+\location{Aug 2016 -- May 2018 | Storrs, CT}
+\sectionsep
+\end{multicols}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LEADERSHIP EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\section{Leadership Experience} 
+%\begin{multicols}{2}
+%\runsubsection{PSU Applied Physics Club\\}
+%\descript{President}
+%\location{2014 -- 2016}
+%\begin{tightemize}
+%\item Worked on our Space Grant radio interferometer project.
+%\item Managed our laboratory; acquired funding and equipment.
+%\item Participated in outreach during the Astronomy Department's `AstroFest'.
+%\end{tightemize}
+%\sectionsep
+%\columnbreak
+%\runsubsection{PSU Society of Physics Students\\}
+%\descript{Vice President,  Project Lead/Manager}
+%\location{2014 -- 2016}
+%\begin{tightemize}
+%\item Proposed and secured funding for a `cloud chamber', a type of particle detector. 
+%\item Started designing and constructing the detector.
+%\end{tightemize}
+%\sectionsep
+%\end{multicols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Skills at a Glance}
+\begin{multicols}{3}
+\subsection{Languages}
+Python  \textbullet{} Javascript \textbullet{} Java 8+ \textbullet{}   C/C++
+\columnbreak
+
+\subsection{Technologies}
+Django \textbullet{} Flask \textbullet{} ReactJS \textbullet{} MongoDB \textbullet{} PostgreSQL \textbullet{} PDFBox \textbullet{} GitHub Workflows \textbullet{} Docker \textbullet{} Kubernetes \textbullet{} DevOps  \textbullet{}  Kafka
+\columnbreak
+
+\subsection{Environments}
+MacOS  \textbullet{}  RHEL Linux \textbullet{} Ubuntu \textbullet{} Windows \textbullet{} \LaTeX  
+\vspace{-1ex}
+\end{multicols}
+\sectionsep
+\begin{center}
+References available upon request
+\end{center}
+
+%\end{minipage} 
+\end{document}
